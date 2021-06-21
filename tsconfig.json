@@ -3,6 +3,12 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "btg-vgonzaga": [
+        "dist/btg-vgonzaga/btg-vgonzaga",
+        "dist/btg-vgonzaga"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,

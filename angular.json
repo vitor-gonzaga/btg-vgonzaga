@@ -122,6 +122,46 @@
           }
         }
       }
+    },
+    "btg-vgonzaga": {
+      "projectType": "library",
+      "root": "projects/btg-vgonzaga",
+      "sourceRoot": "projects/btg-vgonzaga/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/btg-vgonzaga/tsconfig.lib.json",
+            "project": "projects/btg-vgonzaga/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/btg-vgonzaga/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/btg-vgonzaga/src/test.ts",
+            "tsConfig": "projects/btg-vgonzaga/tsconfig.spec.json",
+            "karmaConfig": "projects/btg-vgonzaga/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/btg-vgonzaga/tsconfig.lib.json",
+              "projects/btg-vgonzaga/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "vgonzaga-btg"
