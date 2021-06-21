@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Imenu } from 'projects/btg-vgonzaga/src/lib/menu/models/Imenu.interface';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  mockMenu: Imenu = 
+  {
+    isLightDarkMode: true,
+    menuItems: [
+      {
+        menuItemName: 'ItemA',
+        menuItemRoute: 'routeA',
+      },
+      {
+        menuItemName: 'ItemB',
+        menuItemRoute: 'routeB',
+      },
+      {
+        menuItemName: 'ItemC',
+        menuItemRoute: 'routeC',
+      }
+    ]
+  };
   title = 'vgonzaga-btg';
 }
