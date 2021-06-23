@@ -7,23 +7,23 @@ import { Imenu } from 'projects/btg-vgonzaga/src/lib/menu/models/Imenu.interface
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  mockMenu: Imenu = 
-  {
-    isLightDarkMode: true,
-    menuItems: [
-      {
-        menuItemName: 'ItemA',
-        menuItemRoute: 'routeA',
-      },
-      {
-        menuItemName: 'ItemB',
-        menuItemRoute: 'routeB',
-      },
-      {
-        menuItemName: 'ItemC',
-        menuItemRoute: 'routeC',
-      }
-    ]
-  };
+  mockMenu: Imenu =
+    {
+      isDarkMode: false,
+      menuItems: [
+        {
+          menuItemName: 'ItemA',
+          menuItemRoute: 'routeA',
+        },
+        {
+          menuItemName: 'ItemB',
+          menuItemRoute: 'routeB',
+        },
+        {
+          menuItemName: 'ItemC',
+          menuItemRoute: 'routeC',
+        }
+      ]
+    };
   title = 'vgonzaga-btg';
 }

@@ -5,7 +5,7 @@ import { ItemCComponent } from './item-c.component';
 const routes: Routes = [{ path: '', component: ItemCComponent }];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class ItemCRoutingModule { }
