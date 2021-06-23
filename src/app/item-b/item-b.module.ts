@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ButtonModule } from 'projects/btg-vgonzaga/src/public-api';
+import { ButtonModule } from 'btg-vgonzaga';
 import { ItemBComponent } from './item-b.component';
 import { ItemBRoutingModule } from './item-b.routing.module';
 

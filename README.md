@@ -16,6 +16,7 @@ ng serve
 
 - [x] DarkMode
 - [x] Possibilita o carregamento por lazyload mediante a configuração do desenvolvedor
+- [] Exportação de Interfaces e Enum
 
 ### Instalação
 
