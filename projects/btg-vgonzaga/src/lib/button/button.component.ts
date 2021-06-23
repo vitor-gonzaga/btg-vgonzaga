@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { EButton } from './models/Ebutton.enum';
-import { IButton } from './models/Ibutton.interface';
+import { EButton } from './models/EButton.enum';
+import { IButton } from './models/IButton.interface';
 
 @Component({
   selector: 'lib-button',

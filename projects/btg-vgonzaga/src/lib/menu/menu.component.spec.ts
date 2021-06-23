@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MenuComponent } from './menu.component';
-import { Imenu } from './models/Imenu.interface';
+import { Imenu } from './models/IMenu.interface';
 
 describe('MenuComponent', () => {
   let component: MenuComponent;

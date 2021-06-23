@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Imenu } from 'projects/btg-vgonzaga/src/lib/menu/models/Imenu.interface';
+import { Imenu } from 'projects/btg-vgonzaga/src/lib/menu/models/IMenu.interface';
 
 @Component({
   selector: 'app-root',
