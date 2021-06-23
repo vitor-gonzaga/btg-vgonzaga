@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ButtonModule } from 'projects/btg-vgonzaga/src/public-api';
 import { ItemBComponent } from './item-b.component';
 import { ItemBRoutingModule } from './item-b.routing.module';
 
@@ -6,7 +7,7 @@ import { ItemBRoutingModule } from './item-b.routing.module';
   declarations: [
     ItemBComponent,
   ],
-  imports: [ItemBRoutingModule],
+  imports: [ItemBRoutingModule, ButtonModule],
   exports: [ItemBComponent]
 })
 export class ItemBModule { }

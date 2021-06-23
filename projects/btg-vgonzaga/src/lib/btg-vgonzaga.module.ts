@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BtgVgonzagaComponent } from './btg-vgonzaga.component';
 import { MenuModule } from './menu/menu.module';
+import { ButtonModule } from './button/button.module';
 
 
 
@@ -9,10 +10,10 @@ import { MenuModule } from './menu/menu.module';
     BtgVgonzagaComponent,
   ],
   imports: [
-    MenuModule
+    MenuModule, ButtonModule
   ],
   exports: [
-    BtgVgonzagaComponent, MenuModule
+    BtgVgonzagaComponent, MenuModule, ButtonModule
   ]
 })
 export class BtgVgonzagaModule { }
