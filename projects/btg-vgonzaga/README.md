@@ -1,24 +1,87 @@
-# BtgVgonzaga
+# btg-vgonzaga
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+btg-vgonzaga é uma biblioteca que contem dois componentes atualmente, sendo eles menu e buttons.
 
-## Code scaffolding
+> Para utiliza-la de forma correta e necessario rodar o seguinte comando dentro da sua aplicação:
 
-Run `ng generate component component-name --project btg-vgonzaga` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project btg-vgonzaga`.
-> Note: Don't forget to add `--project btg-vgonzaga` or else it will be added to the default project in your `angular.json` file. 
+```
+npm i btg-vgonzaga
+```
 
-## Build
+### Link do código fonte da biblioteca
 
-Run `ng build btg-vgonzaga` to build the project. The build artifacts will be stored in the `dist/` directory.
+#[GitHub](https://github.com/vitor-gonzaga/btg-vgonzaga)
 
-## Publishing
+### Recursos componente Menu
 
-After building your library with `ng build btg-vgonzaga`, go to the dist folder `cd dist/btg-vgonzaga` and run `npm publish`.
+- [x] DarkMode
+- [x] Possibilita o carregamento por lazyload mediante a configuração do desenvolvedor
 
-## Running unit tests
+### Recursos componente Button
 
-Run `ng test btg-vgonzaga` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [x] Retorno do evento de click no botão
+- [x] Conteúdo e tipo customizável
 
-## Further help
+# Modo de uso da Biblioteca
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Utilização do menu
+
+O componente `lib-menu` onde recebe como parâmetro o nome de seus itens assim como a rota para cada item, além da opção de darkMode .
+Método de implementação da lib:
+
+```
+ <lib-menu [menuValues]="menu"></lib-menu>
+```
+
+O parâmetro `menuValues` deverá seguir a interface abaixo:
+
+###### interface:
+
+```
+{
+  isDarkMode: boolean,
+  menuItems: [
+    {
+      menuItemName: string,
+      menuItemRoute: string,
+    }
+  ]
+};
+```
+
+---
+
+## Utilização do Botão
+
+Para utilizar o componente `lib-button` é necessario passar alguns parâmetro.
+
+Método de implementação:
+
+```
+ <lib-button [buttonValues]="button"></lib-button>
+```
+
+O componente button contem um Input `buttonValues` do tipo da interface abaixo:
+
+###### Interface:
+
+```
+{
+    name: string,
+    type: Enum
+};
+```
+
+###### Enum:
+
+```
+SUCCESS,
+INFO,
+ERROR,
+```
+
+## Licença
+
+MIT
+
+**Software Livre**

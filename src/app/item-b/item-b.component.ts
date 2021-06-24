@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EButton } from 'projects/btg-vgonzaga/src/lib/button/models/EButton.enum';
-import { IButton } from 'projects/btg-vgonzaga/src/lib/button/models/IButton.interface';
+import { EButton, IButton } from 'btg-vgonzaga';
 
 @Component({
   selector: 'app-item-b',
